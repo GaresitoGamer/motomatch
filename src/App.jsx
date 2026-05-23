@@ -15,6 +15,7 @@ export default function App() {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isQuizOpen, setIsQuizOpen] = useState(false);
+  const [activeMobileTab, setActiveMobileTab] = useState('catalog');
 
   // Filtrar catálogo de motos
   const filteredBikes = useMemo(() => {
@@ -49,6 +50,7 @@ export default function App() {
         return;
       }
       setSelectedBikes(prev => [...prev, bike]);
+      setActiveMobileTab('comparison'); // Switch to comparison tab automatically
     }
   };
 
@@ -63,6 +65,7 @@ export default function App() {
     // Auto-seleccionar la moto agregada
     if (selectedBikes.length < 3) {
       setSelectedBikes(prev => [...prev, newBike]);
+      setActiveMobileTab('comparison'); // Switch to comparison tab automatically
     } else {
       alert(`Moto "${newBike.brand} ${newBike.model}" agregada al catálogo. Deselecciona alguna moto para poder compararla.`);
     }
@@ -123,10 +126,28 @@ export default function App() {
         </div>
       </header>
 
+      {/* Tabs for mobile layout (< 1024px) */}
+      <div className="mobile-tabs-nav">
+        <button 
+          className={`mobile-tab-btn ${activeMobileTab === 'catalog' ? 'active' : ''}`}
+          onClick={() => setActiveMobileTab('catalog')}
+        >
+          📋 Catálogo ({bikes.length})
+        </button>
+        <button 
+          className={`mobile-tab-btn ${activeMobileTab === 'comparison' ? 'active' : ''}`}
+          onClick={() => setActiveMobileTab('comparison')}
+          style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem' }}
+        >
+          📊 Comparador ({selectedBikes.length})
+          {selectedBikes.length > 0 && <span className="mobile-tab-badge">{selectedBikes.length}</span>}
+        </button>
+      </div>
+
       {/* Main Grid */}
       <main className="dashboard-grid">
         {/* Sidebar: Catalogo */}
-        <aside className="catalog-sidebar">
+        <aside className={`catalog-sidebar ${activeMobileTab === 'catalog' ? 'mobile-visible' : 'mobile-hidden'}`}>
           {/* Búsqueda */}
           <div className="search-box">
             <Search className="search-icon" size={16} />
@@ -216,7 +237,7 @@ export default function App() {
         </aside>
 
         {/* Workspace: Comparación */}
-        <section className="workspace-area">
+        <section className={`workspace-area ${activeMobileTab === 'comparison' ? 'mobile-visible' : 'mobile-hidden'}`}>
           {/* Slots de Comparación */}
           <div>
             <div className="workspace-slots-title" style={{ marginBottom: '1rem' }}>
