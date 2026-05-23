@@ -16,7 +16,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Experto",
     description: "Una de las superdeportivas de un litro más icónicas del mundo, nacida directamente del desarrollo en MotoGP. Potencia salvaje, chasis rígido y electrónica de carreras.",
     image: "🏍️",
-    image_url: "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/5/51/2015_Yamaha_YZF-R1_crop.JPG"
   },
   {
     id: "bmw-s1000rr",
@@ -35,7 +35,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Experto",
     description: "La superbike alemana de referencia. Con motor ShiftCam tetracilíndrico de altas revoluciones, alerones aerodinámicos y una precisión de chasis de nivel de circuito.",
     image: "🏁",
-    image_url: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/BMW_S_1000_RR_-_BMW_M_1000_RR_50_Years_M_%2822121615413%29.jpg/3840px-BMW_S_1000_RR_-_BMW_M_1000_RR_50_Years_M_%2822121615413%29.jpg"
   },
   {
     id: "kawasaki-zx6r",
@@ -54,7 +54,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Avanzado",
     description: "La reina de las supersport de peso medio. Su motor de 636cc ofrece un par superior en bajos y medios que las tradicionales 600cc de circuito.",
     image: "🥷",
-    image_url: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/2/2f/2013_Kawasaki_ZX-6R.jpg"
   },
   {
     id: "honda-cbr500r",
@@ -73,7 +73,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Principiante (A2)",
     description: "La deportiva perfecta para el carnet A2. Estética agresiva inspirada en la Fireblade pero con una postura cómoda y consumo de combustible ultra bajo.",
     image: "🔴",
-    image_url: "https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/2023_Honda_CB500_Hornet.jpg/3840px-2023_Honda_CB500_Hornet.jpg"
   },
   {
     id: "yamaha-mt07",
@@ -92,7 +92,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Intermedio",
     description: "La superventas absoluta del mercado naked. Famosa por su motor bicilíndrico CP2, divertido, con mucho par en bajos y una agilidad endiablada.",
     image: "⚡",
-    image_url: "https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/4/45/Yamaha_MT-07_2025_EICMA_2024.jpg"
   },
   {
     id: "yamaha-mt09",
@@ -111,7 +111,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Avanzado",
     description: "Equipada con el motor tricilíndrico CP3 de empuje brutal y suspensiones Öhlins premium. Una naked hiperdeportiva ágil y cargada de sensaciones.",
     image: "💥",
-    image_url: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/2024_Yamaha_MT-09_Y-AMT.jpg/3840px-2024_Yamaha_MT-09_Y-AMT.jpg"
   },
   {
     id: "kawasaki-z900",
@@ -130,7 +130,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Avanzado",
     description: "La tetracilíndrica naked favorita de España. Suave entrega de par en bajos y rabia arriba con frenos Brembo y amortiguador Öhlins trasero.",
     image: "🟢",
-    image_url: "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Kawasaki_Z900%2C_green.jpg/3840px-Kawasaki_Z900%2C_green.jpg"
   },
   {
     id: "ktm-390duke",
@@ -149,7 +149,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Principiante (A2)",
     description: "Apodada 'The Corner Rocket'. Monocilíndrica extremadamente ligera y ágil, perfecta para devorar curvas cerradas y moverse con soltura por la ciudad.",
     image: "🍊",
-    image_url: "https://images.unsplash.com/photo-1622185135505-2d795003994a?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Ktm_duke_390.jpg"
   },
   {
     id: "ducati-monster",
@@ -168,7 +168,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Avanzado",
     description: "El icono italiano rediseñado con chasis de aluminio derivado de Superbike. Ligera, compacta y con el inconfundible empuje del motor bicilíndrico Testastretta.",
     image: "🇮🇹",
-    image_url: "https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/c/c9/Ducati_Monster_S4R_S_Tricolore_2008.jpg"
   },
   {
     id: "bmw-r1250gs",
@@ -187,7 +187,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Avanzado",
     description: "La reina indiscutible del mototurismo de aventura. Motor bóxer con distribución variable ShiftCam, suspensión Telelever y una comodidad sin rival para largas distancias.",
     image: "⛰️",
-    image_url: "https://images.unsplash.com/photo-1591123720164-de1348028a82?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW_R1250GS_HP_2018-10-12.jpg"
   },
   {
     id: "honda-africatwin",
@@ -206,7 +206,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Avanzado",
     description: "Una leyenda del rally raid adaptada a la era moderna. Excelente equilibrio entre comportamiento off-road agresivo y comodidad en carretera de larga distancia.",
     image: "🌍",
-    image_url: "https://images.unsplash.com/photo-1525160354320-d8e92641c563?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/6/68/Honda_Africatwin.jpg"
   },
   {
     id: "honda-transalp",
@@ -225,7 +225,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Intermedio",
     description: "El retorno de una leyenda trail polivalente. Motor bicilíndrico en línea paralelo con gran carácter, muy manejable tanto en tierra como para el día a día urbano.",
     image: "⛺",
-    image_url: "https://images.unsplash.com/photo-1609630875204-77db7f052528?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/2023_Honda_XL750_Transalp.jpg/3840px-2023_Honda_XL750_Transalp.jpg"
   },
   {
     id: "ktm-890advr",
@@ -244,7 +244,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Experto",
     description: "La trail más endurera del mercado. Suspensiones WP XPLOR de competición, depósito bajo y una orientación off-road extrema dispuesta a cruzar desiertos.",
     image: "🪵",
-    image_url: "https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/3/37/KTM_890_Adventure.jpg"
   },
   {
     id: "hd-iron883",
@@ -263,7 +263,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Intermedio",
     description: "La custom oscura y minimalista por excelencia de Milwaukee. Motor Evolution refrigerado por aire con sonido y vibraciones puramente clásicas de la vieja escuela.",
     image: "🦅",
-    image_url: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Flickr_-_ronsaunders47_-_HARLEY-DAVIDSON_XR1200_SPORTSTER._2010..jpg"
   },
   {
     id: "hd-sportsters",
@@ -282,7 +282,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Avanzado",
     description: "Una cruiser deportiva moderna impulsada por el motor Revolution Max 1250T refrigerado por líquido. Postura baja, escapes elevados y acelaración brutal.",
     image: "🔥",
-    image_url: "https://images.unsplash.com/photo-1558981359-219d6364c9c8?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Flickr_-_ronsaunders47_-_HARLEY-DAVIDSON_XR1200_SPORTSTER._2010..jpg"
   },
   {
     id: "honda-rebel500",
@@ -301,7 +301,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Principiante (A2)",
     description: "Custom compacta y rebelde. Su baja altura de asiento y facilidad de manejo la convierten en la opción bobber perfecta para conductores noveles.",
     image: "💀",
-    image_url: "https://images.unsplash.com/photo-1558981396-5fcd8ba373db?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/2020_Honda_Rebel_500.jpg/1920px-2020_Honda_Rebel_500.jpg"
   },
   {
     id: "honda-rebel1100",
@@ -320,7 +320,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Intermedio",
     description: "Cruiser moderna con opción de transmisión de doble embrague DCT (automática). Motor bicilíndrico en paralelo potente derivado de la Africa Twin.",
     image: "🦾",
-    image_url: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/2021_Honda_Rebel_1100_MT.jpg/3840px-2021_Honda_Rebel_1100_MT.jpg"
   },
   {
     id: "honda-pcx125",
@@ -339,7 +339,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Principiante (B / A1)",
     description: "La reina de la movilidad urbana. Consumos inferiores a 2.1L/100km, silenciosa gracias al motor eSP+ con Start & Stop y un maletero generoso.",
     image: "🛵",
-    image_url: "https://images.unsplash.com/photo-1571188654248-7a89213915f7?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Honda_PCX125_2011_Front.JPG"
   },
   {
     id: "kymco-agility",
@@ -358,7 +358,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Principiante (B / A1)",
     description: "Rueda alta súper económica, ideal para principiantes y desplazamientos estrictamente urbanos. Bajo coste de mantenimiento e insuperable agilidad.",
     image: "🚲",
-    image_url: "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=400&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Gometz-la-Ville_le_16_mai_2017_-_2.jpg/3840px-Gometz-la-Ville_le_16_mai_2017_-_2.jpg"
   },
   {
     id: "yamaha-tmax",
@@ -377,7 +377,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Intermedio",
     description: "La reina de las maxi-scooters deportivas. Comportamiento y parte ciclo de motocicleta convencional con el confort, protección y facilidad de uso de una scooter.",
     image: "🚀",
-    image_url: "https://images.unsplash.com/photo-1611245451551-8e0f135062b1?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/3/3d/TMAX500.JPG"
   },
   {
     id: "vespa-gts300",
@@ -396,7 +396,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Principiante (A2)",
     description: "Chasis monocasco de acero al puro estilo italiano. Un motor HPE potente para salir a autovías manteniendo el encanto atemporal de la Vespa clásica.",
     image: "🛵",
-    image_url: "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Vespa_GTV_310_2025.jpg"
   },
   {
     id: "kawasaki-ninja1000sx",
@@ -415,7 +415,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Avanzado",
     description: "La fusión perfecta entre deportividad radical y confort de viaje. Motor de 4 cilindros refinado y potente con maletas integradas de fábrica.",
     image: "🗺️",
-    image_url: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/c/c9/Kawasaki_Ninja_1000_ABS_right-side_2011_Tokyo_Motor_Show.jpg"
   },
   {
     id: "bmw-r1250rt",
@@ -434,7 +434,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Avanzado",
     description: "La gran turismo devoradora de kilómetros. Carenado integral gigante con pantalla eléctrica, sistema de audio y el aplomo del motor bóxer ShiftCam.",
     image: "💼",
-    image_url: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/9/91/R1200rt-2k.jpg"
   },
   {
     id: "yamaha-fjr1300",
@@ -453,7 +453,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Avanzado",
     description: "Un transatlántico terrestre. Transmisión por cardán, cúpula regulable eléctricamente, depósito gigante y un motor tetracilíndrico incombustible.",
     image: "🛳️",
-    image_url: "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/5/59/FJR1300AS.jpg"
   },
   {
     id: "honda-cb650r",
@@ -472,7 +472,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Intermedio",
     description: "Estilo Neo Sports Café con un motor de 4 cilindros en línea que aúlla de forma celestial. Muy suave para el día a día y excitante a altas revoluciones.",
     image: "☕",
-    image_url: "https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/2023_Honda_CBR650R_E-Clutch.jpg/3840px-2023_Honda_CBR650R_E-Clutch.jpg"
   },
   {
     id: "suzuki-vstrom650",
@@ -491,7 +491,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Intermedio",
     description: "Una de las motos lógicas más queridas de la historia. Motor V-Twin indestructible, cómoda ergonomía, robustez contrastada y una versatilidad sin fisuras.",
     image: "🎒",
-    image_url: "https://images.unsplash.com/photo-1609630875204-77db7f052528?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Red_2005_Suzuki_V-Strom_650.jpg/3840px-Red_2005_Suzuki_V-Strom_650.jpg"
   },
   {
     id: "triumph-trident660",
@@ -510,7 +510,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Intermedio",
     description: "Diseño elegante y minimalista de origen británico con motor tricilíndrico que une lo mejor del empuje a bajas vueltas y la estirada final.",
     image: "🇬🇧",
-    image_url: "https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/c/c2/2022_Triumph_Trident_660.jpg"
   },
   {
     id: "re-meteor350",
@@ -529,7 +529,7 @@ export const INITIAL_MOTORCYCLES = [
     difficulty: "Principiante (A2)",
     description: "Una cruiser clásica monocilíndrica diseñada para paseos tranquilos. Estilo retro, posición relajada, gran economía y navegación paso a paso integrada Tripper.",
     image: "⚓",
-    image_url: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=600&q=80"
+    image_url: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Royal_Enfield_Meteor.png"
   }
 ];
 
@@ -546,7 +546,7 @@ export function getProxyImageUrl(url, width = 600, height = 300, fit = "cover") 
   
   // Si la imagen ya viene de Unsplash, no la pasamos por el proxy de Google
   // ya que Unsplash permite hotlinking directo de forma ilimitada y sin CORS
-  if (url.includes("images.unsplash.com")) {
+  if (url.includes("images.unsplash.com") || url.includes("upload.wikimedia.org")) {
     return url;
   }
   
