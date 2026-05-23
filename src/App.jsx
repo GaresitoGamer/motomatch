@@ -224,7 +224,15 @@ export default function App() {
                 <Layers size={18} color="var(--accent-cyan)" />
                 Área de Comparación
               </h2>
-              <span>{selectedBikes.length} de 3 motos seleccionadas</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                <div className="gear-indicator-container" title="Indicador de Marchas (Motos Seleccionadas)">
+                  <span className="gear-label">MARCHA</span>
+                  <span className={`gear-digit gear-${selectedBikes.length}`}>
+                    {selectedBikes.length === 0 ? 'N' : selectedBikes.length}
+                  </span>
+                </div>
+                <span className="slots-count-text">{selectedBikes.length} de 3 motos seleccionadas</span>
+              </div>
             </div>
 
             {selectedBikes.length === 0 ? (

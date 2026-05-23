@@ -20,7 +20,7 @@ export default function BikeCard({ bike, onRemove }) {
   const imageUrl = bike.image_url || defaultImages[bike.category] || defaultImages.Naked;
 
   return (
-    <div className={`slot-card filled slide-up-anim ${bike.category.toLowerCase()}`} style={{ padding: 0 }}>
+    <div className={`slot-card filled slide-up-anim ${bike.category.toLowerCase()} brand-${bike.brand.toLowerCase().replace(/[^a-z0-9]/g, '')}`} style={{ padding: 0 }}>
       <button 
         className="remove-slot-btn" 
         onClick={() => onRemove(bike.id)}
