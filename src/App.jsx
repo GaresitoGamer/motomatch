@@ -6,6 +6,7 @@ import BikeCard from './components/BikeCard';
 import ComparisonGrid from './components/ComparisonGrid';
 import AiAssistant from './components/AiAssistant';
 import AddBikeModal from './components/AddBikeModal';
+import RecommendQuiz from './components/RecommendQuiz';
 
 export default function App() {
   const [bikes, setBikes] = useState(INITIAL_MOTORCYCLES);
@@ -13,6 +14,7 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isQuizOpen, setIsQuizOpen] = useState(false);
 
   // Filtrar catálogo de motos
   const filteredBikes = useMemo(() => {
@@ -87,21 +89,38 @@ export default function App() {
           </div>
         </div>
         
-        {selectedBikes.length > 0 && (
+        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
           <button 
-            className="filter-tag" 
-            onClick={handleClearSelection}
+            className="filter-tag active" 
+            onClick={() => setIsQuizOpen(true)}
             style={{ 
               display: 'flex', 
               alignItems: 'center', 
               gap: '0.4rem', 
-              borderColor: 'rgba(255, 46, 46, 0.3)',
-              color: 'var(--accent-red)' 
+              borderColor: 'var(--accent-cyan)',
+              color: 'var(--accent-cyan)',
+              background: 'rgba(0, 240, 255, 0.05)'
             }}
           >
-            <RefreshCw size={12} /> Limpiar Selección ({selectedBikes.length})
+            <Sparkles size={12} /> ¿Cuál es mi moto ideal?
           </button>
-        )}
+
+          {selectedBikes.length > 0 && (
+            <button 
+              className="filter-tag" 
+              onClick={handleClearSelection}
+              style={{ 
+                display: 'flex', 
+                alignItems: 'center', 
+                gap: '0.4rem', 
+                borderColor: 'rgba(255, 46, 46, 0.3)',
+                color: 'var(--accent-red)' 
+              }}
+            >
+              <RefreshCw size={12} /> Limpiar Selección ({selectedBikes.length})
+            </button>
+          )}
+        </div>
       </header>
 
       {/* Main Grid */}
@@ -212,10 +231,32 @@ export default function App() {
               <div className="empty-workspace-banner glass-panel">
                 <div className="empty-workspace-icon">🛵</div>
                 <h3>¡Compara características de motos!</h3>
-                <p>
+                <p style={{ marginBottom: '1.25rem' }}>
                   Selecciona de 1 a 3 motos del catálogo lateral para analizar sus especificaciones técnicas, precios promedio y dejar que MotoMatch AI evalúe tu combinación.
                 </p>
-                <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.5rem' }}>
+
+                <button 
+                  className="filter-tag active" 
+                  onClick={() => setIsQuizOpen(true)}
+                  style={{ 
+                    padding: '0.75rem 1.25rem', 
+                    fontSize: '0.9rem', 
+                    borderRadius: '10px', 
+                    display: 'inline-flex', 
+                    alignItems: 'center', 
+                    gap: '0.5rem',
+                    marginBottom: '1.5rem',
+                    cursor: 'pointer',
+                    background: 'rgba(0, 240, 255, 0.08)',
+                    borderColor: 'var(--accent-cyan)',
+                    color: 'var(--accent-cyan)',
+                    fontWeight: 600
+                  }}
+                >
+                  <Sparkles size={14} /> ¿No sabes qué elegir? Haz el Test de Moto Ideal
+                </button>
+
+                <div style={{ display: 'flex', gap: '0.5rem' }}>
                   <span className="category-badge badge-Naked">Naked</span>
                   <span className="category-badge badge-Sport">Sport</span>
                   <span className="category-badge badge-Trail">Trail</span>
@@ -258,6 +299,15 @@ export default function App() {
         <AddBikeModal 
           onClose={() => setIsModalOpen(false)} 
           onAddBike={handleAddCustomBike} 
+        />
+      )}
+
+      {/* Quiz Modal */}
+      {isQuizOpen && (
+        <RecommendQuiz 
+          bikes={bikes} 
+          onAddBike={handleSelectBike} 
+          onClose={() => setIsQuizOpen(false)} 
         />
       )}
     </div>
